@@ -12,7 +12,7 @@ body {
 }
 
 .background {
-  background-image: url("./images/forest.jpg");
+  background-image: url("./images/boys.jpg");
   height: 100vh;
   width: 100%;
   background-size: cover;
@@ -28,6 +28,7 @@ body {
 .container h1 {
   font-size: 4rem;
 }
+
 
 .settings {
   position: absolute;
@@ -51,7 +52,7 @@ body {
 }
 .settings-content button {
   padding: 0.5rem 1rem;
-  background-color: green;
+  background-color: rgb(30, 50, 225);
   border: none;
   border-radius: 10px;
   font-size: 1rem;
@@ -76,5 +77,27 @@ body {
 }
 .time-container div {
   font-size: 4rem;
-  color: white;
+  color: rgba(230, 27, 27, 0.959);
+}
+
+#settingIcon,
+#dobInput,
+#dobButton {
+  cursor: pointer;
+}
+.setting-button:active {
+  transform: translateY(4px);
+}
+
+#settingIcon {
+  animation: rotate360 2s linear infinite;
+}
+
+@keyframes rotate360 {
+  from {
+    transform: rotate(0deg); /* Start rotation */
+  }
+  to {
+    transform: rotate(360deg); /* End rotation */
+  }
 }
